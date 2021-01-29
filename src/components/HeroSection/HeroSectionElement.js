@@ -45,6 +45,14 @@ export const VideoBg = styled.video`
   background: #232a34;
 `;
 
+export const ImageBg = styled.img`
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #232a34;
+`;
+
 export const HeroContent = styled.div`
   position: relative;
   padding: 8px 24px;
@@ -59,7 +67,8 @@ export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 48px;
   text-align: center;
-  @media screen and (max-width: 7668px) {
+  -webkit-text-stroke: 1px black;
+  @media screen and (max-width: 768px) {
     font-size: 40px;
   }
 
@@ -68,20 +77,35 @@ export const HeroH1 = styled.h1`
   }
 `;
 
+export const HeroH2 = styled.h1`
+  color: #fff;
+  font-size: 43px;
+  padding: 10px;
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+  @media screen and (max-width: 7668px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 22px;
+  }
+`;
+
 export const HeroP = styled.p`
   width: 70%;
   align-self: center;
   margin-top: 24px;
   color: #fff;
-  font-size: 24px;
+  font-size: 28px;
   text-align: center;
   padding-bottom: 20px;
   @media screen and (max-width: 7668px) {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 25px;
   }
 `;
 

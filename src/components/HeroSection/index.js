@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import Video from "../../videos/video.mp4";
+import Video from "../../videos/video1.mp4";
+import HeroImg from "../../images/hero4.jpg";
 import {
   HeroContainer,
   HeroBg,
   VideoBg,
+  ImageBg,
   HeroH1,
+  HeroH2,
   HeroP,
   HeroBtnWrapper,
   HeroContent,
@@ -22,29 +25,29 @@ const HeroSection = () => {
   };
 
   return (
-    <HeroContainer>
-      <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
-      <HeroBg>
-        <HeroContent>
-          <HeroH1>Best Pizza In Town</HeroH1>
-          <HeroP>
-            Sign up for a new account and receive $250 in pizza credit towards
-            your next payment.
-          </HeroP>
-          <HeroBtnWrapper>
-            <Button
-              to="signup"
-              onMouseEnter={onHover}
-              onMouseLeave={onHover}
-              primary="true"
-              dark="true"
-            >
-              Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-            </Button>
-          </HeroBtnWrapper>
-        </HeroContent>
-      </HeroBg>
-    </HeroContainer>
+    <>
+      <HeroContainer>
+        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        {/* <ImageBg src={HeroImg} alt="heroimage" /> */}
+        <HeroBg>
+          <HeroContent>
+            <HeroH1>Electrical and Computer Systems Graduate</HeroH1>
+            <HeroP>Software/Autonomous Engineer at Monash Nova Rover</HeroP>
+            <HeroBtnWrapper>
+              <Button
+                to="signup"
+                onMouseEnter={onHover}
+                onMouseLeave={onHover}
+                primary="true"
+                dark="true"
+              >
+                Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+              </Button>
+            </HeroBtnWrapper>
+          </HeroContent>
+        </HeroBg>
+      </HeroContainer>
+    </>
   );
 };
 
