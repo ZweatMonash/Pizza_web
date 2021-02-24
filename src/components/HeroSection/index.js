@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Video from "../../videos/video1.mp4";
-import HeroImg from "../../images/hero4.jpg";
 import {
   HeroContainer,
   HeroBg,
@@ -41,7 +40,7 @@ const HeroSection = () => {
                 primary="true"
                 dark="true"
               >
-                Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+                Download Resume {hover ? <ArrowForward /> : <ArrowRight />}
               </Button>
             </HeroBtnWrapper>
           </HeroContent>

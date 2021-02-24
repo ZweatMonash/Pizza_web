@@ -1,8 +1,7 @@
-import React from "react";
-import Icon1 from "../../images/svg-1.svg";
-import Icon2 from "../../images/svg-2.svg";
-import Icon3 from "../../images/svg-3.svg";
-
+import React, { useState, useEffect } from "react";
+import { SRLWrapper } from "simple-react-lightbox";
+import { ProjectsObject, ProjectImages } from "./Data";
+// import LightBoxElement from "./LightBoxElement";
 import {
   ProjectsContainer,
   ProjectsH1,
@@ -14,25 +13,45 @@ import {
 } from "./ProjectsElement";
 
 const Projects = () => {
+  const [tag, setTag] = useState("all");
+  const [filteredImages, setFilteredImages] = useState([]);
+
+  useEffect(() => {
+    tag === "all"
+      ? setFilteredImages(ProjectImages)
+      : setFilteredImages(
+          ProjectImages.filter((image) => image.tag === tag).map(
+            (project) => project.imagePathRel
+          )
+        );
+    console.log(filteredImages);
+  }, [tag, filteredImages]);
+
+  const handleClick = (tag) => (event) => {
+    setTag(tag);
+  };
+
   return (
     <ProjectsContainer id="projects">
       <ProjectsH1>Explore More Projects</ProjectsH1>
       <ProjectsWrapper>
-        <ProjectsCard>
-          <ProjectsIcon src={Icon1} alt="icon1"></ProjectsIcon>
-          <ProjectsH2>Project 1</ProjectsH2>
-          <ProjectsP>Project 1 Para</ProjectsP>
-        </ProjectsCard>
-        <ProjectsCard>
-          <ProjectsIcon src={Icon2} alt="icon2"></ProjectsIcon>
-          <ProjectsH2>Project 2</ProjectsH2>
-          <ProjectsP>Project 2 Para</ProjectsP>
-        </ProjectsCard>
-        <ProjectsCard>
-          <ProjectsIcon src={Icon3} alt="icon3"></ProjectsIcon>
-          <ProjectsH2>Project 3</ProjectsH2>
-          <ProjectsP>Project 3 Para</ProjectsP>
-        </ProjectsCard>
+        {ProjectsObject.map((projects) => (
+          <ProjectsCard key={projects.key} onClick={handleClick(projects.tag)}>
+            <SRLWrapper>
+              <a
+                href={filteredImages.length > 0 ? filteredImages[0] : undefined}
+              >
+                <ProjectsIcon
+                  src={projects.iconPath}
+                  alt="icon"
+                  key={projects.key}
+                ></ProjectsIcon>
+              </a>
+            </SRLWrapper>
+            <ProjectsH2>{projects.iconLabel}</ProjectsH2>
+            <ProjectsP>Project 2 Para</ProjectsP>
+          </ProjectsCard>
+        ))}
       </ProjectsWrapper>
     </ProjectsContainer>
   );

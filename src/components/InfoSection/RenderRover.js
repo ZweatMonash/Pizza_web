@@ -79,7 +79,6 @@ class RenderRover extends Component {
       bbox.getSize(size);
       //Reposition to 0,halfY,0
       scene.position.copy(cent);
-      rover.center();
       if (mobile) {
         scene.position.y = 10;
       }

@@ -9,8 +9,9 @@ import {
 import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
 import Sidebar from "../components/Sidebar";
-import pizza from "../images/svg-1.svg";
-
+import Skills from "../components/Skills";
+import Timeline from "../components/Timeline";
+import Footer from "../components/Footer";
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -27,6 +28,9 @@ const Home = () => {
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjThree} />
       <Projects />
+      <Skills />
+      <Timeline />
+      <Footer />
     </>
   );
 };

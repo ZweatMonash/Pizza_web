@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
-  height: 800px;
+  height: auto;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #010606;
+  padding: 50px 20px;
 
   @media screen and (max-width: 768px) {
     height: 1100px;
@@ -49,8 +51,10 @@ export const ProjectsCard = styled.div`
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    transform: scale(1.1);
+    fill: white;
+    transform: scale(1.05);
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
   }
 `;
 
