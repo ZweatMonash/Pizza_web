@@ -2,6 +2,8 @@ import React from "react";
 import { Button } from "../ButtonElement";
 import RenderRover from "./RenderRover";
 import RenderJackal from "./RenderJackal";
+import RenderPenguinpi from "../../images/Penguipi.png";
+
 import {
   InfoContainer,
   InfoWrapper,
@@ -71,7 +73,9 @@ const InfoSection = ({
               <ImgWrap>
                 {render && renderObj === "rover" && <RenderRover />}
                 {render && renderObj === "jackal" && <RenderJackal />}
-                {/* <Img src={img} alt="pizza" /> */}
+                {render && renderObj === "penguipi" && (
+                  <Img src={RenderPenguinpi} alt={alt} />
+                )}
               </ImgWrap>
             </Column2>
           </InfoRow>

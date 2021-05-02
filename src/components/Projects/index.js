@@ -16,7 +16,19 @@ const Projects = () => {
   const [tag, setTag] = useState("all");
   const [filteredImages, setFilteredImages] = useState([]);
 
-  useEffect(() => {
+  // useEffect(() => {
+  //   tag === "all"
+  //     ? setFilteredImages(ProjectImages)
+  //     : setFilteredImages(
+  //         ProjectImages.filter((image) => image.tag === tag).map(
+  //           (project) => project.imagePathRel
+  //         )
+  //       );
+  //   console.log(filteredImages);
+  // }, []);
+
+  const handleClick = (clickedTag) => (event) => {
+    setTag(clickedTag);
     tag === "all"
       ? setFilteredImages(ProjectImages)
       : setFilteredImages(
@@ -25,10 +37,6 @@ const Projects = () => {
           )
         );
     console.log(filteredImages);
-  }, [tag, filteredImages]);
-
-  const handleClick = (tag) => (event) => {
-    setTag(tag);
   };
 
   return (

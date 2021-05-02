@@ -4,7 +4,7 @@ import VerticalTimelineComponent from "./VerticalTimelineComponent";
 const Timeline = () => {
   return (
     <>
-      <TimelineContainer>
+      <TimelineContainer id="journey">
         <TimelineH1>My Journey</TimelineH1>
         <VerticalTimelineComponent />
       </TimelineContainer>

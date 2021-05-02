@@ -95,10 +95,18 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 1000px;
   height: 100%;
+  margin-right: -10rem;
 `;
 
 export const Render = styled.div`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+`;
+
+export const Img = styled.img`
+  z-index: 1;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
 `;

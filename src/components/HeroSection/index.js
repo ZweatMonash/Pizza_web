@@ -32,17 +32,19 @@ const HeroSection = () => {
           <HeroContent>
             <HeroH1>Electrical and Computer Systems Graduate</HeroH1>
             <HeroP>Software/Autonomous Engineer at Monash Nova Rover</HeroP>
-            <HeroBtnWrapper>
-              <Button
-                to="signup"
-                onMouseEnter={onHover}
-                onMouseLeave={onHover}
-                primary="true"
-                dark="true"
-              >
-                Download Resume {hover ? <ArrowForward /> : <ArrowRight />}
-              </Button>
-            </HeroBtnWrapper>
+            <form method="get" action="../../documents/projects/Davids-CV.pdf">
+              <HeroBtnWrapper>
+                <Button
+                  to="signup"
+                  onMouseEnter={onHover}
+                  onMouseLeave={onHover}
+                  primary="true"
+                  dark="true"
+                >
+                  Download Resume {hover ? <ArrowForward /> : <ArrowRight />}
+                </Button>
+              </HeroBtnWrapper>
+            </form>
           </HeroContent>
         </HeroBg>
       </HeroContainer>

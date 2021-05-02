@@ -29,14 +29,14 @@ export const FooterWrapper = styled.div`
   padding: 0 50px;
 `;
 
-export const FooterCard = styled.div`
+export const FooterCard = styled.a`
   background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  height: 100px;
+  height: 80px;
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
   height: auto;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,13 +9,13 @@ export const SkillsContainer = styled.div`
   background: #010606;
   padding: 50px 10px;
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     height: 1100px;
   }
 
   @media screen and (max-width: 480px) {
     height: 1100px;
-  }
+  } */
 `;
 
 export const SkillsWrapper = styled.div`

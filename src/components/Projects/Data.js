@@ -6,7 +6,7 @@ export const ProjectsObject = [
     tags: ["Machine Learning", "Sensors", "Computer Vision"],
     imagePath: "../../images/projects/anti-sleep/anti-sleep",
     images: ["1.png", "2.png", "3.png", "4.png"],
-    tag: "anti-sleep",
+    tag: "antisleep",
   },
   {
     key: 2,

@@ -15,7 +15,7 @@ export const homeObjOne = {
     "- Assisted in sensor selection and performance analysis to meet budget plans",
   buttonLabel: "Watch Video",
   imgStart: false,
-  alt: "Pizza",
+  alt: "rover",
   dark: "true",
   primary: "true",
   darkText: false,
@@ -37,7 +37,7 @@ export const homeObjTwo = {
   description3: "- Achieved 2 out of 3 social behaviour initially aimed",
   buttonLabel: "Watch Video",
   imgStart: true,
-  alt: "Pizza",
+  alt: "jackal",
   dark: "true",
   primary: "true",
   darkText: false,
@@ -60,11 +60,11 @@ export const homeObjThree = {
     "- Deployed YoloV5 object recognition system to navigate through obstacle prone environment",
   buttonLabel: "Watch Video",
   imgStart: false,
-  // img: require("../../images/svg-1.svg"), //get from undraw.co
-  alt: "Pizza",
+  img: require("../../images/Penguipi.png"), //get from undraw.co
+  alt: "PenguiPi robot",
   dark: "true",
   primary: "true",
   darkText: false,
-  render: false,
-  renderData: "PenguiPi",
+  render: true,
+  renderObj: "penguipi",
 };

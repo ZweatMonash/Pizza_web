@@ -44,13 +44,13 @@ const Navbar = ({ toggle }) => {
                 <NavLinks to="projects">Discover</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="services">Skills</NavLinks>
+                <NavLinks to="skills">Skills</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="journey">My Journey</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="signup ">Contact</NavLinks>
+                <NavLinks to="contact">Contact</NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>

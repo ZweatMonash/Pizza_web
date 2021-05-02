@@ -42,7 +42,9 @@ const VerticalTimelineComponent = () => {
         </p>
         <p>- Create automated system tests and follow manual test procedures</p>
         <p></p>
-        <Button variant="contained">Explore</Button>
+        <Button variant="contained" href="https://agerris.com/">
+          Explore
+        </Button>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
@@ -62,7 +64,12 @@ const VerticalTimelineComponent = () => {
         <p>- Dean’s Honors List: 82.877 Weighted Average Mark; GPA: 3.656</p>
         <p>- Monash Summer Reserach Scholarship Holder</p>
         <p></p>
-        <Button variant="contained">Explore</Button>
+        <Button
+          variant="contained"
+          href="https://www.monash.edu/study/courses/majors-minors-specialisations/2021/specialisations/electrical-and-computer-systems-engineering-xs0004"
+        >
+          Explore
+        </Button>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
@@ -121,6 +128,9 @@ const VerticalTimelineComponent = () => {
           - Created a Gazebo simulation environment to improve safety for
           testing purposes.
         </p>
+        <Button variant="contained" href="https://www.novarover.space/">
+          Explore
+        </Button>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--education"

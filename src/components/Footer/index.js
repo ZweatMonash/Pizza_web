@@ -13,19 +13,19 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 const Footer = () => {
   return (
     <>
-      <FooterContainer>
+      <FooterContainer id="contact">
         <FooterH1>Contact</FooterH1>
         <FooterWrapper>
-          <FooterCard>
+          <FooterCard href="https://www.linkedin.com/in/zwehtet/">
             <LinkedInIcon />
           </FooterCard>
-          <FooterCard>
+          <FooterCard href="mailto: zwe.david.htet@gmail.com">
             <EmailIcon />
           </FooterCard>
-          <FooterCard>
+          <FooterCard href="https://twitter.com/zwe229679">
             <TwitterIcon />
           </FooterCard>
-          <FooterCard>
+          <FooterCard href="https://www.facebook.com/zwe.linhtet.1/">
             <FacebookIcon />
           </FooterCard>
         </FooterWrapper>

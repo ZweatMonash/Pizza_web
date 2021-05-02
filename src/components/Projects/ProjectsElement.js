@@ -9,14 +9,14 @@ export const ProjectsContainer = styled.div`
   align-items: center;
   background: #010606;
   padding: 50px 20px;
-
+  /* 
   @media screen and (max-width: 768px) {
     height: 1100px;
   }
 
   @media screen and (max-width: 480px) {
     height: 1300px;
-  }
+  } */
 `;
 
 export const ProjectsWrapper = styled.div`
